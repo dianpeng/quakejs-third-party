@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprofiler.a  CMakeFiles/profiler_static.dir/src/profiler.cc.o CMakeFiles/profiler_static.dir/src/profile-handler.cc.o CMakeFiles/profiler_static.dir/src/profiledata.cc.o CMakeFiles/stacktrace_object.dir/src/stacktrace.cc.o CMakeFiles/stacktrace_object.dir/src/base/elf_mem_image.cc.o CMakeFiles/stacktrace_object.dir/src/base/vdso_support.cc.o
+/usr/bin/ranlib libprofiler.a

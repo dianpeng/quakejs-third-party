@@ -1,0 +1,285 @@
+...found 1 target...
+...found 12 targets...
+...updating 3 targets...
+common.mkdir bin.v2/standalone/ac/gcc-9/release/threading-multi
+
+        mkdir -p "bin.v2/standalone/ac/gcc-9/release/threading-multi"
+    
+common.mkdir bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden
+
+        mkdir -p "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden"
+    
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zlib_h.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zlib_h.o" "bin.v2/standalone/ac/zlib_h.cpp"
+
+...updated 3 targets...
+...found 5 targets...
+...updating 2 targets...
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-z.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-z.o" "bin.v2/standalone/ac/main-z.cpp"
+
+gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/z
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/z" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-z.o"  -Wl,-Bstatic  -Wl,-Bdynamic -lrt -lz -Wl,--end-group -fPIC -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+...updated 2 targets...
+...found 5 targets...
+...updating 1 target...
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/bzlib_h.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/bzlib_h.o" "bin.v2/standalone/ac/bzlib_h.cpp"
+
+...updated 1 target...
+...found 5 targets...
+...updating 2 targets...
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-bz2.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-bz2.o" "bin.v2/standalone/ac/main-bz2.cpp"
+
+gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/bz2
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/bz2" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-bz2.o"  -Wl,-Bstatic  -Wl,-Bdynamic -lrt -lbz2 -Wl,--end-group -fPIC -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+...updated 2 targets...
+...found 5 targets...
+...updating 1 target...
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd_h.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd_h.o" "bin.v2/standalone/ac/zstd_h.cpp"
+
+bin.v2/standalone/ac/zstd_h.cpp:1:10: fatal error: zstd.h: No such file or directory
+    1 | #include <zstd.h>
+      |          ^~~~~~~~
+compilation terminated.
+...failed gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd_h.o...
+...failed updating 1 target...
+...found 5 targets...
+...updating 2 targets...
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-zstd.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-zstd.o" "bin.v2/standalone/ac/main-zstd.cpp"
+
+gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-zstd.o"  -Wl,-Bstatic  -Wl,-Bdynamic -lrt -lzstd -Wl,--end-group -fPIC -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+/usr/bin/ld: cannot find -lzstd
+collect2: error: ld returned 1 exit status
+...failed gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd...
+...failed updating 1 target...
+...updated 1 target...
+...found 5 targets...
+...updating 2 targets...
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-zstd_static.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-zstd_static.o" "bin.v2/standalone/ac/main-zstd_static.cpp"
+
+gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd_static
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd_static" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-zstd_static.o"  -Wl,-Bstatic  -Wl,-Bdynamic -lrt -lzstd_static -Wl,--end-group -fPIC -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+/usr/bin/ld: cannot find -lzstd_static
+collect2: error: ld returned 1 exit status
+...failed gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/zstd_static...
+...failed updating 1 target...
+...updated 1 target...
+...found 5 targets...
+...updating 2 targets...
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-libzstd.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-libzstd.o" "bin.v2/standalone/ac/main-libzstd.cpp"
+
+gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/libzstd
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/libzstd" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-libzstd.o"  -Wl,-Bstatic  -Wl,-Bdynamic -lrt -llibzstd -Wl,--end-group -fPIC -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+/usr/bin/ld: cannot find -llibzstd
+collect2: error: ld returned 1 exit status
+...failed gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/libzstd...
+...failed updating 1 target...
+...updated 1 target...
+...found 5 targets...
+...updating 2 targets...
+gcc.compile.c++ bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-libzstd_static.o
+
+    "g++"   -fvisibility-inlines-hidden -fPIC -m64 -pthread -O3 -finline-functions -Wno-inline -Wall -fvisibility=hidden  -DNDEBUG    -c -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-libzstd_static.o" "bin.v2/standalone/ac/main-libzstd_static.cpp"
+
+gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/libzstd_static
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/libzstd_static" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/main-libzstd_static.o"  -Wl,-Bstatic  -Wl,-Bdynamic -lrt -llibzstd_static -Wl,--end-group -fPIC -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+/usr/bin/ld: cannot find -llibzstd_static
+collect2: error: ld returned 1 exit status
+...failed gcc.link bin.v2/standalone/ac/gcc-9/release/threading-multi/visibility-hidden/libzstd_static...
+...failed updating 1 target...
+...updated 1 target...
+...found 5 targets...
+...updating 1 target...
+gcc.link bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/zstd
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/zstd" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/main-zstd.o"  -Wl,-Bstatic -lzstd -Wl,-Bdynamic -lrt -Wl,--end-group -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+/usr/bin/ld: cannot find -lzstd
+collect2: error: ld returned 1 exit status
+...failed gcc.link bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/zstd...
+...failed updating 1 target...
+...found 2 targets...
+...updating 1 target...
+gcc.link bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/zstd_static
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/zstd_static" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/main-zstd_static.o"  -Wl,-Bstatic -lzstd_static -Wl,-Bdynamic -lrt -Wl,--end-group -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+/usr/bin/ld: cannot find -lzstd_static
+collect2: error: ld returned 1 exit status
+...failed gcc.link bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/zstd_static...
+...failed updating 1 target...
+...found 2 targets...
+...updating 1 target...
+gcc.link bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/libzstd
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/libzstd" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/main-libzstd.o"  -Wl,-Bstatic -llibzstd -Wl,-Bdynamic -lrt -Wl,--end-group -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+/usr/bin/ld: cannot find -llibzstd
+collect2: error: ld returned 1 exit status
+...failed gcc.link bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/libzstd...
+...failed updating 1 target...
+...found 2 targets...
+...updating 1 target...
+gcc.link bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/libzstd_static
+
+    "g++"    -o "bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/libzstd_static" -Wl,--start-group "bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/main-libzstd_static.o"  -Wl,-Bstatic -llibzstd_static -Wl,-Bdynamic -lrt -Wl,--end-group -m64 -pthread -fvisibility=hidden -fvisibility-inlines-hidden 
+
+/usr/bin/ld: cannot find -llibzstd_static
+collect2: error: ld returned 1 exit status
+...failed gcc.link bin.v2/standalone/ac/gcc-9/release/link-static/threading-multi/visibility-hidden/libzstd_static...
+...failed updating 1 target...
+...found 1 target...
+...updating 1 target...
+
+file /tmp/jam97343e57.000
+# Automatically generated by B2.
+# Do not edit.
+
+module config-cache {
+  set "default address-model-32-bit-64-bit-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "2" ;
+  set "default architecture-arm-mips1-power-riscv-s390x-sparc-x86-combined-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "7" ;
+  set "compiler supports SSE2-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "compiler supports SSE4.1-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "C++11 mutex-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "lockfree boost::atomic_flag-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "has stat::st_mtim-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "has stat::st_mtimensec-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "has stat::st_mtimespec-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "has stat::st_birthtim-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "has stat::st_birthtimensec-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "has stat::st_birthtimespec-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "has statx-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "has statx syscall-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_auto_declarations-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_constexpr-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_defaulted_functions-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_final-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_hdr_mutex-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_hdr_tuple-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_lambdas-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_noexcept-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_nullptr-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_rvalue_references-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_template_aliases-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_thread_local-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_variadic_templates-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "has_icu builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "ac-library-zlib-<address-model>64-<architecture>x86-<link>static-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "missing" ;
+  set "ac-library-bzip2-<address-model>64-<architecture>x86-<link>static-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "missing" ;
+  set "ac-library-lzma-<address-model>64-<architecture>x86-<link>static-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "missing" ;
+  set "ac-library-zstd-<address-model>64-<architecture>x86-<link>static-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "missing" ;
+  set "ac-library-lzma-<address-model>64-<architecture>x86-<link>shared-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "missing" ;
+  set "has_lzma_cputhreads builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "cxx11_alignas-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_decltype-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "iconv (libc)-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "icu-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "icu (lib64)-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "native atomic int32 supported-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "native syslog supported-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "pthread supports robust mutexes-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "compiler supports SSSE3-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "compiler supports AVX2-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "gcc visibility-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "long double support-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "cxx11_static_assert-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "std::fstream is moveable and swappable-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "Has Large File Support-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "libbacktrace builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "addr2line builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "WinDbg builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "WinDbgCached builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "false" ;
+  set "BOOST_COMP_GNUC >= 4.3.0-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "true" ;
+  set "default address-model-32-bit-64-bit-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "2" ;
+  set "default architecture-arm-mips1-power-riscv-s390x-sparc-x86-combined-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "7" ;
+  set "compiler supports SSE2-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "compiler supports SSE4.1-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "C++11 mutex-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "lockfree boost::atomic_flag-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "has stat::st_mtim-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "has stat::st_mtimensec-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "false" ;
+  set "has stat::st_mtimespec-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "false" ;
+  set "has stat::st_birthtim-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "false" ;
+  set "has stat::st_birthtimensec-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "false" ;
+  set "has stat::st_birthtimespec-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "false" ;
+  set "has statx-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "has statx syscall-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_auto_declarations-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_constexpr-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_defaulted_functions-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_final-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_hdr_mutex-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_hdr_tuple-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_lambdas-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_noexcept-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_nullptr-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_rvalue_references-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_template_aliases-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_thread_local-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_variadic_templates-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "has_icu builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "ac-library-zlib-<address-model>64-<architecture>x86-<link>shared-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "%default" "z" "<link>shared" ;
+  set "ac-library-bzip2-<address-model>64-<architecture>x86-<link>shared-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "%default" "bz2" "<link>shared" ;
+  set "ac-library-lzma-<address-model>64-<architecture>x86-<link>shared-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "%default" "lzma" "<link>shared" ;
+  set "ac-library-zstd-<address-model>64-<architecture>x86-<link>shared-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "missing" ;
+  set "has_lzma_cputhreads builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_alignas-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_decltype-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "iconv (libc)-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "icu-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "native atomic int32 supported-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "native syslog supported-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "pthread supports robust mutexes-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "compiler supports SSSE3-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "compiler supports AVX2-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "gcc visibility-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "long double support-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "cxx11_static_assert-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "std::fstream is moveable and swappable-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "Has Large File Support-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "libbacktrace builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "addr2line builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "WinDbg builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "false" ;
+  set "WinDbgCached builds-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "false" ;
+  set "BOOST_COMP_GNUC >= 4.3.0-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "true" ;
+  set "ac-library-zlib-<address-model>64-<architecture>x86-<link>static-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "%default" "z" "<link>static" ;
+  set "ac-library-bzip2-<address-model>64-<architecture>x86-<link>static-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "%default" "bz2" "<link>static" ;
+  set "ac-library-lzma-<address-model>64-<architecture>x86-<link>static-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "%default" "lzma" "<link>static" ;
+  set "ac-library-zstd-<address-model>64-<architecture>x86-<link>static-<target-os>linux-<toolset-gcc:version>8-<toolset>gcc" : "missing" ;
+  set "ac-library-zlib-<address-model>64-<architecture>x86-<link>shared-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "%default" "z" "<link>shared" ;
+  set "ac-library-bzip2-<address-model>64-<architecture>x86-<link>shared-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "%default" "bz2" "<link>shared" ;
+  set "ac-library-zstd-<address-model>64-<architecture>x86-<link>shared-<target-os>linux-<toolset-gcc:version>9-<toolset>gcc" : "missing" ;
+}
+
+config-cache.write bin.v2/project-cache.jam
+
+    cat "/tmp/jam97343e57.000" > "bin.v2/project-cache.jam"
+
+...updated 1 target...

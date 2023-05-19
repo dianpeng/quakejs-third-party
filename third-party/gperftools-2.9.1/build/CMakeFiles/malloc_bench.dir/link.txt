@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -fsized-deallocation   CMakeFiles/malloc_bench.dir/benchmark/malloc_bench.cc.o  -o malloc_bench   -L/usr/lib/gcc/x86_64-linux-gnu/8  librun_benchmark.a libtcmalloc_minimal.a libspinlock.a libsysinfo.a liblogging.a libmaybe_threads.a -lpthread 

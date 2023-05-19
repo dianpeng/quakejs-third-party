@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -fsized-deallocation   CMakeFiles/heap_profiler_debug_unittest.dir/src/tests/heap-profiler_unittest.cc.o  -o heap_profiler_debug_unittest  -Wl,-rpath,/root/Workspace/Sparrow/third-party/gperftools-2.9.1/build libtcmalloc_debug.so.9.9.5 -lpthread 

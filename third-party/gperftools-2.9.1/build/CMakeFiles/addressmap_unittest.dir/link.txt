@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -fsized-deallocation   CMakeFiles/addressmap_unittest.dir/src/tests/addressmap_unittest.cc.o  -o addressmap_unittest   -L/usr/lib/gcc/x86_64-linux-gnu/8  liblogging.a 

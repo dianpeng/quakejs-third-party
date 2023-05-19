@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Workspace/Sparrow/third-party/gperftools-2.9.1/benchmark/binary_trees.cc
+algorithm
+-
+errno.h
+-
+iostream
+-
+pthread.h
+-
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+vector
+-
+

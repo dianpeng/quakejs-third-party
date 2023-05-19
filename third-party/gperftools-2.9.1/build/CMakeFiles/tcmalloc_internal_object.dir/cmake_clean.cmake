@@ -1,0 +1,27 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/tcmalloc_internal_object.dir/src/base/low_level_alloc.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/central_freelist.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/common.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/fake_stacktrace_scope.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/heap-profile-table.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/heap-profiler.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/internal_logging.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/malloc_extension.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/malloc_hook.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/memfs_malloc.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/memory_region_map.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/page_heap.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/raw_printer.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/sampler.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/span.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/stack_trace_table.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/static_vars.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/symbolize.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/system-alloc.cc.o"
+  "CMakeFiles/tcmalloc_internal_object.dir/src/thread_cache.cc.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/tcmalloc_internal_object.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

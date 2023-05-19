@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -fsized-deallocation   CMakeFiles/sampling_debug_test.dir/src/tests/sampling_test.cc.o  -o sampling_debug_test  -Wl,-rpath,/root/Workspace/Sparrow/third-party/gperftools-2.9.1/build libtcmalloc_debug.so.9.9.5 -lpthread 

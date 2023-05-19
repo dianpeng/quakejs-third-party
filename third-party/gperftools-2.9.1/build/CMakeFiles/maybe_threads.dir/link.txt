@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmaybe_threads.a  CMakeFiles/maybe_threads.dir/src/maybe_threads.cc.o
+/usr/bin/ranlib libmaybe_threads.a

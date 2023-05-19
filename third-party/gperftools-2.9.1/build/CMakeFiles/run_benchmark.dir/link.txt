@@ -1,0 +1,2 @@
+/usr/bin/ar qc librun_benchmark.a  CMakeFiles/run_benchmark.dir/benchmark/run_benchmark.c.o
+/usr/bin/ranlib librun_benchmark.a

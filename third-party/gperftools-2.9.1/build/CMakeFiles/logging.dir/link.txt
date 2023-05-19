@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblogging.a  CMakeFiles/logging.dir/src/base/logging.cc.o CMakeFiles/logging.dir/src/base/dynamic_annotations.c.o
+/usr/bin/ranlib liblogging.a

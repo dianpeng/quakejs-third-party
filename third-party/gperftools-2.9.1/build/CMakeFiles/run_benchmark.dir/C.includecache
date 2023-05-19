@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Workspace/Sparrow/third-party/gperftools-2.9.1/benchmark/run_benchmark.c
+run_benchmark.h
+/root/Workspace/Sparrow/third-party/gperftools-2.9.1/benchmark/run_benchmark.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/time.h
+-
+
+/root/Workspace/Sparrow/third-party/gperftools-2.9.1/benchmark/run_benchmark.h
+stdint.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -fsized-deallocation   CMakeFiles/malloc_bench_shared.dir/benchmark/malloc_bench.cc.o  -o malloc_bench_shared   -L/usr/lib/gcc/x86_64-linux-gnu/8  -Wl,-rpath,/root/Workspace/Sparrow/third-party/gperftools-2.9.1/build librun_benchmark.a libtcmalloc_minimal.so.9.9.5 -lpthread 

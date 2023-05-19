@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -fsized-deallocation   CMakeFiles/heap_checker_debug_unittest.dir/src/tests/heap-checker_unittest.cc.o  -o heap_checker_debug_unittest   -L/usr/lib/gcc/x86_64-linux-gnu/8  -Wl,-rpath,/root/Workspace/Sparrow/third-party/gperftools-2.9.1/build libtcmalloc_debug.so.9.9.5 liblogging.a -lpthread 

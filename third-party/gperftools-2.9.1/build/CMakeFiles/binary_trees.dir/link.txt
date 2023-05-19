@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -fsized-deallocation   CMakeFiles/binary_trees.dir/benchmark/binary_trees.cc.o  -o binary_trees   -L/usr/lib/gcc/x86_64-linux-gnu/8  libtcmalloc_minimal.a -lpthread libspinlock.a libsysinfo.a liblogging.a libmaybe_threads.a 

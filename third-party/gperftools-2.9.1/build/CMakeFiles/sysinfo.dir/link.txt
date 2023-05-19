@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsysinfo.a  CMakeFiles/sysinfo.dir/src/base/sysinfo.cc.o
+/usr/bin/ranlib libsysinfo.a

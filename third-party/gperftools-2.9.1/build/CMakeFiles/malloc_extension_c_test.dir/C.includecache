@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/gperftools/malloc_extension_c.h
+stddef.h
+-
+sys/types.h
+-
+
+../src/gperftools/malloc_hook_c.h
+stddef.h
+-
+sys/types.h
+-
+
+/root/Workspace/Sparrow/third-party/gperftools-2.9.1/src/tests/malloc_extension_c_test.c
+stdio.h
+-
+stdlib.h
+-
+stddef.h
+-
+gperftools/malloc_extension_c.h
+-
+gperftools/malloc_hook_c.h
+-
+

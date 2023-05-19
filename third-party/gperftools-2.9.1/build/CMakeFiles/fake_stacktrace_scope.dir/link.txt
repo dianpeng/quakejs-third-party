@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfake_stacktrace_scope.a  CMakeFiles/fake_stacktrace_scope.dir/src/fake_stacktrace_scope.cc.o
+/usr/bin/ranlib libfake_stacktrace_scope.a

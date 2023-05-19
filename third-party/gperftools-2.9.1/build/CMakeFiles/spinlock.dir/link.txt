@@ -1,0 +1,2 @@
+/usr/bin/ar qc libspinlock.a  CMakeFiles/spinlock.dir/src/base/spinlock.cc.o CMakeFiles/spinlock.dir/src/base/spinlock_internal.cc.o CMakeFiles/spinlock.dir/src/base/atomicops-internals-x86.cc.o
+/usr/bin/ranlib libspinlock.a

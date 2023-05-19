@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/malloc_extension_c_test.dir/src/tests/malloc_extension_c_test.c.o  -o malloc_extension_c_test  -Wl,-rpath,/root/Workspace/Sparrow/third-party/gperftools-2.9.1/build libtcmalloc_minimal.so.9.9.5 -lstdc++ -lm 

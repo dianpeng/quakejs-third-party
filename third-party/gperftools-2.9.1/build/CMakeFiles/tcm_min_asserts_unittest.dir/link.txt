@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -fsized-deallocation   CMakeFiles/tcm_min_asserts_unittest.dir/src/tests/tcmalloc_unittest.cc.o CMakeFiles/tcm_min_asserts_unittest.dir/src/tests/testutil.cc.o  -o tcm_min_asserts_unittest  -Wl,-rpath,/root/Workspace/Sparrow/third-party/gperftools-2.9.1/build libtcmalloc_minimal.so.9.9.5 -lpthread 
